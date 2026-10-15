@@ -4989,7 +4989,9 @@ function buildInfoPane(summary: LogSummary): HTMLElement {
   for (const [key, value] of rows) {
     const row = el("tr");
     row.appendChild(el("td", "key", key));
-    row.appendChild(el("td", undefined, value));
+    const valueCell = el("td", undefined, value);
+    valueCell.title = value;
+    row.appendChild(valueCell);
     general.tbody.appendChild(row);
   }
   enableRowSelection(general.tbody);
@@ -5002,7 +5004,9 @@ function buildInfoPane(summary: LogSummary): HTMLElement {
   for (const [key, value] of summary.info) {
     const row = el("tr");
     row.appendChild(el("td", "key", key));
-    row.appendChild(el("td", undefined, value));
+    const valueCell = el("td", undefined, value);
+    valueCell.title = value;
+    row.appendChild(valueCell);
     info.tbody.appendChild(row);
   }
   enableRowSelection(info.tbody);
@@ -5314,7 +5318,9 @@ function buildMessagesPane(summary: LogSummary): HTMLElement {
     const levelCell = el("td");
     levelCell.appendChild(el("span", levelBadgeClass(message.level), levelLabel(message.level)));
     row.appendChild(levelCell);
-    row.appendChild(el("td", undefined, message.message));
+    const messageCell = el("td", undefined, message.message);
+    messageCell.title = message.message;
+    row.appendChild(messageCell);
     tbody.appendChild(row);
     entries.push({ row, message });
   }
