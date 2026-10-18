@@ -1,5 +1,19 @@
 # PX4 ULog Viewer
 
+> **[中文说明]** 这是 [`anilkir/vscode-ulog-viewer`](https://github.com/anilkir/vscode-ulog-viewer)
+> 的**简体中文汉化分支**（另含一个表格悬停提示修复），改动已通过上游 PR
+> [#2](https://github.com/anilkir/vscode-ulog-viewer/pull/2) /
+> [#3](https://github.com/anilkir/vscode-ulog-viewer/pull/3) /
+> [#4](https://github.com/anilkir/vscode-ulog-viewer/pull/4) 提交，合并后请优先使用官方市场版本。
+> **下载中文版**：前往 [Releases](https://github.com/sh-u-x-in/vscode-ulog-viewer/releases)
+> 下载 `.vsix`，在 VS Code 扩展面板"从 VSIX 安装"，并将显示语言设为"中文(zh-cn)"。
+>
+> **English:** This fork adds Simplified Chinese (zh-cn) UI localization to the
+> upstream extension, pending upstream PRs #2/#3/#4 above. Grab the ready-to-install
+> `.vsix` from [Releases](https://github.com/sh-u-x-in/vscode-ulog-viewer/releases);
+> set the VS Code display language to zh-cn. Prefer the official Marketplace version
+> once the PRs are merged.
+
 Open and inspect PX4 ULog flight logs (`.ulg` and `.ulog`) directly in VS Code.
 The extension replaces the binary file view with an interactive log viewer for
 quick flight-data inspection.
